@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Tivia App</title>
+    </head>
+    <body>
+        <form name='' method='POST'>
+        {% csrf_token %}
+            <label>Who is the best cricketer in the world?</label>
+            <br/><input type="checkbox" id="White" name="colors[]" value="White">
+            <label for="White">White</label>
+           
+            <br/><input type="checkbox" id="Orange" name="colors[]" value="Orange">
+            <label for="Orange">Orange</label>
+
+            <br/><input type="checkbox" id="Yellow" name="colors[]" value="Yellow">
+            <label for="Yellow">Yellow</label>
+
+            <br/><input type="checkbox" id="Green" name="colors[]" value="Green">
+            <label for="Green">Green</label>
+          
+            <br/><input type='submit' value='Next' name='submit'/>
+        </form>
+    </body>
+</html>

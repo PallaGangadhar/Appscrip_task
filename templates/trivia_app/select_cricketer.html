@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Tivia App</title>
+    </head>
+    <body>
+        <form name='' method='POST'>
+        {% csrf_token %}
+            <label>Who is the best cricketer in the world?</label>
+            <br/><input type="radio" id="Sachin Tendulkar" name="cricketers" value="Sachin Tendulkar">
+            <label for="Sachin Tendulkar">Sachin Tendulkar</label>
+           
+            <br/><input type="radio" id="Virat Kohli" name="cricketers" value="Virat Kohli">
+            <label for="Sachin Tendulkar">Virat Kohli</label>
+
+            <br/><input type="radio" id="Adam Gilchirst" name="cricketers" value="Adam Gilchirst">
+            <label for="Adam Gilchirst">Adam Gilchirst</label>
+
+            <br/><input type="radio" id="Jacques Kallis" name="cricketers" value="Jacques Kallis">
+            <label for="Jacques Kallis">Jacques Kallis</label>
+           
+            <br/><input type='submit' value='Next' name='submit'/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Tivia App</title>
+    </head>
+    <body>
+        <form name='' method='POST'>
+        {% csrf_token %}
+            <label>What is your name?</label>
+            <input type='text' name='name' value='' required/>
+            <br/><input type='submit' value='Next' name='submit'/>
+        </form>
+    </body>
+</html>
